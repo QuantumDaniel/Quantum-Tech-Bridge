@@ -14,7 +14,7 @@ const HeroSection = () => {
                         <h1 className="  mb-4 hero-text">Learn <span className='tech'>Tech</span> With Just Your <span className='phone'>Phone</span> in 2026</h1>
                         <p className="lead mb-4">Quantum TechBridge teaches in-demand digital skills — Graphics, video editing, cloud storage, web development and more — using only your smartphone. No laptop. No excuses.</p>
                         <div className="d-flex gap-3">
-                            <button className="btn btn-light btn-lg fw-bold btn-start"><a className="nav-link" href="https://www.google.com" target="blank">Start Learning Today</a></button>
+                            <button className="btn btn-light btn-lg fw-bold btn-start"><a className="nav-link" href="https://forms.gle/DfeJ49DW9mXJAHvL6" target="blank">Start Learning Today</a></button>
                             <button className="btn btn-outline-light btn-lg fw-bold"><a className="nav-link" href="#courses">Explore Courses</a></button>
 
                         </div>

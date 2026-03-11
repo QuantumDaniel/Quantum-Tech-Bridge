@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CoursesSection = () => {
     const courses = [
@@ -10,7 +11,8 @@ const CoursesSection = () => {
             duration: '6weeks',
             students: 2450,
             icon: '🌐',
-            color: '#667eea'
+            color: '#667eea',
+            link: 'WebDev'
         },
         {
             id: 2,
@@ -20,7 +22,8 @@ const CoursesSection = () => {
             duration: '10 weeks',
             students: 1890,
             icon: '🤖',
-            color: '#764ba2'
+            color: '#764ba2',
+            link: 'Ai'
         },
         {
             id: 3,
@@ -30,7 +33,8 @@ const CoursesSection = () => {
             duration: '2 weeks',
             students: 1650,
             icon: '☁️',
-            color: '#f093fb'
+            color: '#f093fb',
+            link: 'Cloud'
         },
         {
             id: 4,
@@ -40,7 +44,8 @@ const CoursesSection = () => {
             duration: '4 weeks',
             students: 1420,
             icon: '📱',
-            color: '#4facfe'
+            color: '#4facfe',
+            link: 'Office'
         },
         {
             id: 5,
@@ -50,7 +55,8 @@ const CoursesSection = () => {
             duration: '2 weeks',
             students: 1780,
             icon: '📊',
-            color: '#43e97b'
+            color: '#43e97b',
+            link: 'Data'
         },
         {
             id: 6,
@@ -60,7 +66,8 @@ const CoursesSection = () => {
             duration: '3 weeks',
             students: 980,
             icon: '🎨',
-            color: '#fa709a'
+            color: '#fa709a',
+            link: 'Graphics'
         }
     ];
 
@@ -98,7 +105,7 @@ const CoursesSection = () => {
                                             <i className="fas fa-users me-1"></i>{course.students} students
                                         </small>
                                         <button className="btn btn-sm" style={{ backgroundColor: course.color, color: 'white' }}>
-                                            Learn More
+                                            <Link className='link' to={course.link}>Learn More </Link>
                                         </button>
                                     </div>
                                 </div>

@@ -26,7 +26,7 @@ const Testimonials = () => {
         {
             name: 'Anyor Benedictha',
             role: 'Small Business Owner',
-            image: 'DM',
+            image: 'AB',
             testimonial: 'I enrolled in the Microsoft Office course and it completely transformed how I run my business. The smartphone-first approach means I could practice anywhere, anytime.',
             rating: 5
         }

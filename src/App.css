@@ -179,4 +179,9 @@ img {
 .active a {
 
   text-decoration: underline;
+  background-color: red;
+}
+
+.link {
+  text-decoration: none;
 }
