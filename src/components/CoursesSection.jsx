@@ -19,7 +19,7 @@ const CoursesSection = () => {
             title: 'AI models',
             description: 'Learn content creation, image and video creation with AI models',
             level: 'Intermediate',
-            duration: '10 weeks',
+            duration: '5 weeks',
             students: 1890,
             icon: '🤖',
             color: '#764ba2',

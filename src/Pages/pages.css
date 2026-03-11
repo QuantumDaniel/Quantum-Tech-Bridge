@@ -1,0 +1,493 @@
+/* =============================================
+   CoursePage.css — Shared Course Page Styles
+   Each course has its own colour accent variables
+   ============================================= */
+
+/* ── Colour Accents per Course ── */
+
+/* AI — electric violet */
+.ai-accent {
+    color: #a78bfa;
+}
+
+.ai-btn {
+    background: #a78bfa !important;
+    color: #07090f !important;
+}
+
+.ai-num {
+    color: #a78bfa;
+    border-color: #a78bfa40;
+    background: #a78bfa12;
+}
+
+.ai-hero {
+    --hero-color: #a78bfa;
+}
+
+.ai-card {
+    border-color: #a78bfa40 !important;
+}
+
+.ai-glow,
+.ai-hero .cp-hero-glow {
+    background: radial-gradient(ellipse at top right, rgba(167, 139, 250, 0.12), transparent 60%);
+}
+
+.ai-cta {
+    background: linear-gradient(135deg, rgba(167, 139, 250, 0.08), rgba(167, 139, 250, 0.03));
+    border-top: 1px solid rgba(167, 139, 250, 0.2);
+}
+
+/* Cloud — sky blue */
+.cloud-accent {
+    color: #38bdf8;
+}
+
+.cloud-btn {
+    background: #38bdf8 !important;
+    color: #07090f !important;
+}
+
+.cloud-num {
+    color: #38bdf8;
+    border-color: #38bdf840;
+    background: #38bdf812;
+}
+
+.cloud-hero {
+    --hero-color: #38bdf8;
+}
+
+.cloud-card {
+    border-color: #38bdf840 !important;
+}
+
+.cloud-glow,
+.cloud-hero .cp-hero-glow {
+    background: radial-gradient(ellipse at top right, rgba(56, 189, 248, 0.12), transparent 60%);
+}
+
+.cloud-cta {
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.08), rgba(56, 189, 248, 0.03));
+    border-top: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+/* Office — warm orange */
+.office-accent {
+    color: #fb923c;
+}
+
+.office-btn {
+    background: #fb923c !important;
+    color: #07090f !important;
+}
+
+.office-num {
+    color: #fb923c;
+    border-color: #fb923c40;
+    background: #fb923c12;
+}
+
+.office-hero {
+    --hero-color: #fb923c;
+}
+
+.office-card {
+    border-color: #fb923c40 !important;
+}
+
+.office-glow,
+.office-hero .cp-hero-glow {
+    background: radial-gradient(ellipse at top right, rgba(251, 146, 60, 0.12), transparent 60%);
+}
+
+.office-cta {
+    background: linear-gradient(135deg, rgba(251, 146, 60, 0.08), rgba(251, 146, 60, 0.03));
+    border-top: 1px solid rgba(251, 146, 60, 0.2);
+}
+
+/* WebDev — emerald green */
+.webdev-accent {
+    color: #34d399;
+}
+
+.webdev-btn {
+    background: #34d399 !important;
+    color: #07090f !important;
+}
+
+.webdev-num {
+    color: #34d399;
+    border-color: #34d39940;
+    background: #34d39912;
+}
+
+.webdev-hero {
+    --hero-color: #34d399;
+}
+
+.webdev-card {
+    border-color: #34d39940 !important;
+}
+
+.webdev-glow,
+.webdev-hero .cp-hero-glow {
+    background: radial-gradient(ellipse at top right, rgba(52, 211, 153, 0.12), transparent 60%);
+}
+
+.webdev-cta {
+    background: linear-gradient(135deg, rgba(52, 211, 153, 0.08), rgba(52, 211, 153, 0.03));
+    border-top: 1px solid rgba(52, 211, 153, 0.2);
+}
+
+/* Graphics — hot pink */
+.graphics-accent {
+    color: #f472b6;
+}
+
+.graphics-btn {
+    background: #f472b6 !important;
+    color: #07090f !important;
+}
+
+.graphics-num {
+    color: #f472b6;
+    border-color: #f472b640;
+    background: #f472b612;
+}
+
+.graphics-hero {
+    --hero-color: #f472b6;
+}
+
+.graphics-card {
+    border-color: #f472b640 !important;
+}
+
+.graphics-glow,
+.graphics-hero .cp-hero-glow {
+    background: radial-gradient(ellipse at top right, rgba(244, 114, 182, 0.12), transparent 60%);
+}
+
+.graphics-cta {
+    background: linear-gradient(135deg, rgba(244, 114, 182, 0.08), rgba(244, 114, 182, 0.03));
+    border-top: 1px solid rgba(244, 114, 182, 0.2);
+}
+
+
+/* Data Entry — golden yellow */
+.data-accent {
+    color: #fbbf24;
+}
+
+.data-btn {
+    background: #fbbf24 !important;
+    color: #07090f !important;
+}
+
+.data-num {
+    color: #fbbf24;
+    border-color: #fbbf2440;
+    background: #fbbf2412;
+}
+
+.data-hero {
+    --hero-color: #fbbf24;
+}
+
+.data-card {
+    border-color: #fbbf2440 !important;
+}
+
+.data-glow,
+.data-hero .cp-hero-glow {
+    background: radial-gradient(ellipse at top right, rgba(251, 191, 36, 0.12), transparent 60%);
+}
+
+.data-cta {
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.08), rgba(251, 191, 36, 0.03));
+    border-top: 1px solid rgba(251, 191, 36, 0.2);
+}
+
+/* ── Shared Course Page Base ── */
+.course-page {
+    background: var(--bg);
+    min-height: 100vh;
+}
+
+/* ── Hero ── */
+.cp-hero {
+    padding: 9rem 0 6rem;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg);
+}
+
+.cp-hero-glow {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.cp-tag {
+    display: inline-block;
+    font-size: 0.68rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--cyan);
+    border: 1px solid rgba(0, 198, 255, 0.25);
+    padding: 0.3rem 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.cp-title {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.05;
+    color: var(--white);
+    letter-spacing: -1px;
+    margin-bottom: 1.2rem;
+}
+
+.cp-sub {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--muted);
+    max-width: 520px;
+}
+
+/* Hero card */
+.cp-hero-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.cp-hero-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.cp-course-meta-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.cp-meta-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.cp-meta-item:last-child {
+    border-bottom: none;
+}
+
+.cp-meta-label {
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.cp-meta-val {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+/* ── Shared Section Styles ── */
+.cp-section {
+    padding: 5rem 0;
+    background: var(--bg);
+}
+
+.cp-section-dark {
+    background: var(--surface);
+}
+
+.cp-section-tag {
+    font-size: 0.62rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--cyan);
+    margin-bottom: 0.6rem;
+}
+
+.cp-section-title {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+/* ── Who It's For Cards ── */
+.cp-who-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.8rem 1.5rem;
+    height: 100%;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.cp-who-card:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-4px);
+}
+
+.cp-who-icon {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.cp-who-card h5 {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.cp-who-card p {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* ── Curriculum Module Cards ── */
+.cp-module-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.8rem;
+    display: flex;
+    gap: 1.2rem;
+    align-items: flex-start;
+    height: 100%;
+    transition: border-color 0.3s;
+}
+
+.cp-module-card:hover {
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+.cp-module-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    min-width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.cp-module-card h5 {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.cp-module-card p {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* ── CTA Section ── */
+.cp-cta {
+    padding: 6rem 0;
+}
+
+.cp-cta-title {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.cp-cta-sub {
+    font-size: 1rem;
+    color: var(--muted);
+    line-height: 1.7;
+    max-width: 540px;
+    margin: 0 auto 1.5rem;
+}
+
+/* ── Shared Buttons ── */
+.cp-btn-primary {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 0.9rem 2.2rem;
+    color: #07090f;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+    transition: opacity 0.25s, transform 0.25s;
+}
+
+.cp-btn-primary:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+    color: #07090f;
+}
+
+.cp-btn-outline {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 0.9rem 2rem;
+    background: transparent;
+    color: var(--muted);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    transition: border-color 0.25s, color 0.25s;
+}
+
+.cp-btn-outline:hover {
+    border-color: var(--text);
+    color: var(--text);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .cp-hero {
+        padding: 7rem 0 4rem;
+    }
+
+    .cp-hero-card {
+        max-width: 100%;
+    }
+
+    .cp-module-card {
+        flex-direction: column;
+    }
+}
