@@ -16,15 +16,15 @@ const ContactNewsletter = () => {
                             <h5 className="fw-bold mb-3">Contact Information</h5>
                             <div className="mb-3">
                                 <i className="fas fa-envelope me-3"></i>
-                                <strong>Email:</strong> support@quantumtechbridge.com
+                                <strong>Email:</strong> aburorhambagadaniel@gmail.com
                             </div>
                             <div className="mb-3">
                                 <i className="fas fa-phone me-3"></i>
-                                <strong>Phone:</strong> +1 (555) 123-4567
+                                <strong>Phone:</strong> +234 (904) 289-8107
                             </div>
                             <div className="mb-3">
                                 <i className="fas fa-map-marker-alt me-3"></i>
-                                <strong>Location:</strong> Tech Valley, San Francisco, CA
+                                <strong>Location:</strong> Adikpo, Kwande L.G.A, Benue State
                             </div>
                             <div className="mb-3">
                                 <i className="fas fa-clock me-3"></i>
@@ -35,17 +35,17 @@ const ContactNewsletter = () => {
                         <div>
                             <h5 className="fw-bold mb-3">Follow Us</h5>
                             <div className="d-flex gap-3">
-                                <a href="#" style={{ color: 'white', fontSize: '1.5rem' }}>
-                                    <i className="fab fa-facebook"></i>
+                                <a href="https://web.facebook.com/daniel.abur.31/directory_links" style={{ color: 'white', fontSize: '1.5rem' }}>
+                                    <i className="fab fa-facebook">Facebook</i>
                                 </a>
-                                <a href="#" style={{ color: 'white', fontSize: '1.5rem' }}>
-                                    <i className="fab fa-twitter"></i>
+                                <a href="https://x.com/ABURDANIEL53024" style={{ color: 'white', fontSize: '1.5rem' }}>
+                                    <i className="fab fa-twitter">X(Twitter)</i>
                                 </a>
-                                <a href="#" style={{ color: 'white', fontSize: '1.5rem' }}>
-                                    <i className="fab fa-linkedin"></i>
+                                <a href="https://www.linkedin.com/in/abur-daniel-ba01b1217" style={{ color: 'white', fontSize: '1.5rem' }}>
+                                    <i className="fab fa-linkedin">Linkdln</i>
                                 </a>
-                                <a href="#" style={{ color: 'white', fontSize: '1.5rem' }}>
-                                    <i className="fab fa-youtube"></i>
+                                <a href="https://wa.me/2349042898107" style={{ color: 'white', fontSize: '1.5rem' }}>
+                                    <i className="fab fa-youtube">WastApp</i>
                                 </a>
                             </div>
                         </div>

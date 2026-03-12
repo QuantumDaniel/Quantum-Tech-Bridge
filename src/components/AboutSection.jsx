@@ -21,7 +21,7 @@ const AboutSection = () => {
                         }}>
                             <div className="text-center">
                                 <i className="fas fa-graduation-cap" style={{ fontSize: '80px', marginBottom: '20px' }}></i>
-                                <p className="fs-5">Educating Tech Professionals Worldwide</p>
+                                <marquee behavior=" " direction=" "><p className="fs-5">Connecting Minds to Technology</p></marquee>
                             </div>
                         </div>
                     </div>
