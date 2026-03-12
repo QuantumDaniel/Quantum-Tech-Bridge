@@ -40,13 +40,17 @@ const ContactNewsletter = () => {
                                 </a>
                                 <a href="https://x.com/ABURDANIEL53024" target='blank' style={{ color: 'white', fontSize: '1.5rem' }}>
                                     <i className="fab fa-twitter">X(Twitter)</i>
+
                                 </a>
+                            </div>
+                            <div className="d-flex gap-3">
                                 <a href="https://www.linkedin.com/in/abur-daniel-ba01b1217" target='blank' style={{ color: 'white', fontSize: '1.5rem' }}>
                                     <i className="fab fa-linkedin">Linkdln</i>
                                 </a>
                                 <a href="https://wa.me/2349042898107" target='blank' style={{ color: 'white', fontSize: '1.5rem' }}>
                                     <i className="fab fa-youtube">WastApp</i>
                                 </a>
+
                             </div>
                         </div>
                     </div>

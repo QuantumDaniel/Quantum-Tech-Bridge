@@ -105,7 +105,7 @@ const CoursesSection = () => {
                                             <i className="fas fa-users me-1"></i>{course.students} students
                                         </small>
                                         <button className="btn btn-sm" style={{ backgroundColor: course.color, color: 'white' }}>
-                                            <Link className='link' to={course.link}>Learn More </Link>
+                                            <Link className='link text-white' to={course.link}>Learn More </Link>
                                         </button>
                                     </div>
                                 </div>
