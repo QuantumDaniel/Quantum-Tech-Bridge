@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-
+import MyImage from '../assets/quantum.png';
 const HeroSection = () => {
     return (
         <section id="home" className="hero-section text-white d-flex align-items-center" style={{
@@ -34,7 +34,7 @@ const HeroSection = () => {
                             backdropFilter: 'blur(10px)'
                         }}>
 
-                            <img className="image-fluid rounded my-image " src="src\assets\Gemini_Generated_Image_f2stshf2stshf2st.png"></img>
+                            <img className="image-fluid rounded my-image " src={MyImage}></img>
                             <i><p className='text-large founder'>QUANTUM DANIEL (Founder)</p></i>
                         </div>
                     </div>
