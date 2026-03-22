@@ -1,7 +1,21 @@
 import React from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const CoursesSection = () => {
+
+    const ref = useRef(null);
+    const [visible, setVisible] = useState(false);
+
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => { if (entry.isIntersecting) setVisible(true); },
+            { threshold: 0.2 }
+        );
+        if (ref.current) observer.observe(ref.current);
+        return () => observer.disconnect();
+    }, []);
     const courses = [
         {
             id: 1,
@@ -80,9 +94,12 @@ const CoursesSection = () => {
                 <div className="row g-4">
                     {courses.map(course => (
                         <div key={course.id} className="col-md-6 col-lg-4">
-                            <div className="card h-100 border-0 shadow-sm transition-card" style={{
+                            <div ref={ref} className="card h-100 border-0 shadow-sm transition-card" style={{
                                 borderTop: `4px solid ${course.color}`,
-                                transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+                                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                                opacity: visible ? 1 : 0,
+                                transform: visible ? "translateY(0)" : "translateY(40px)",
+                                transition: "opacity 0.6s ease, transform 0.6s ease",
                             }}
                                 onMouseEnter={(e) => {
                                     e.currentTarget.style.transform = 'translateY(-10px)';
