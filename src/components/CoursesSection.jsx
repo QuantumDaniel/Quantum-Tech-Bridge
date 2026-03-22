@@ -91,15 +91,17 @@ const CoursesSection = () => {
                 <h2 className="text-center mb-5 fw-bold" style={{ fontSize: '2.5rem', color: '#667eea' }}>
                     Our Popular Courses
                 </h2>
-                <div className="row g-4">
+                <div className="row g-4" ref={ref} style={{
+                    opacity: visible ? 1 : 0,
+                    transform: visible ? "translateY(0)" : "translateY(40px)",
+                    transition: "opacity 0.6s ease, transform 0.6s ease",
+                }}>
                     {courses.map(course => (
                         <div key={course.id} className="col-md-6 col-lg-4">
-                            <div ref={ref} className="card h-100 border-0 shadow-sm transition-card" style={{
+                            <div className="card h-100 border-0 shadow-sm transition-card" style={{
                                 borderTop: `4px solid ${course.color}`,
                                 transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                                opacity: visible ? 1 : 0,
-                                transform: visible ? "translateY(0)" : "translateY(40px)",
-                                transition: "opacity 0.6s ease, transform 0.6s ease",
+
                             }}
                                 onMouseEnter={(e) => {
                                     e.currentTarget.style.transform = 'translateY(-10px)';
